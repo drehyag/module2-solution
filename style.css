@@ -21,17 +21,14 @@ body {
     border: 1px solid black;
 }
 
-
 .clearfix::after {
     content: "";
-    display: table;
     clear: both;
+    display: table;
 }
-
 
 @media (min-width: 992px) {
     .content-section {
-        
-        width: calc(33.3333% - 40px - 2px); 
+        width: calc(33.333% - 40px);
     }
 }
