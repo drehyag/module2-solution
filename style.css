@@ -25,6 +25,15 @@ body {
     box-sizing: border-box;
     border: 1px solid black;
     position: relative;
+    background-color: gray;
+}
+
+#section1 {
+    margin-left: 0;
+}
+
+#section3 {
+    margin-right: 0;
 }
 
 .section-title {
