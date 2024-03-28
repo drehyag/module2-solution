@@ -6,7 +6,6 @@ h1 {
     text-align: center;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,23 +15,26 @@ body {
 .container {
     width: 100%;
     clear: both;
+    overflow: auto; /* Added to contain floated children */
 }
 
 .content-section {
     float: left;
-    width: 33.333%;
+    width: calc(33.333% - 40px); /* Subtracting 20px margin from each side */
     padding: 20px;
+    margin: 20px; /* Added margin */
     box-sizing: border-box;
     border: 1px solid black;
     position: relative;
     background-color: gray;
+    /* Clearfix for each section is not necessary if you have it on the container */
 }
 
-section1 {
+#section1 {
     margin-left: 0;
 }
 
-section3 {
+#section3 {
     margin-right: 0;
 }
 
@@ -41,7 +43,10 @@ section3 {
     top: 0;
     right: 0;
     padding: 5px;
+}
 
+/* The clearfix is generally applied to the container of floated elements */
+/* You had a typo with the closing brace for .section-title above */
 .clearfix::after {
     content: "";
     clear: both;
@@ -50,6 +55,16 @@ section3 {
 
 @media (min-width: 992px) {
     .content-section {
+        /* Adjust the width calculation if you change the margin */
         width: calc(33.333% - 40px);
+        margin: 20px;
+    }
+    
+    #section1 {
+        margin-left: 20px;
+    }
+    
+    #section3 {
+        margin-right: 20px;
     }
 }
