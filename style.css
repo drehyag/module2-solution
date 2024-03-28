@@ -27,7 +27,7 @@ body {
     border: 1px solid black;
     position: relative;
     background-color: gray;
-    /* Clearfix for each section is not necessary if you have it on the container */
+    
 }
 
 #section1 {
@@ -43,10 +43,14 @@ body {
     top: 0;
     right: 0;
     padding: 5px;
+    background-color: red;
+    border: 1px solid black;
+    color: white;
+    width: 100%;
+    text-align: center;
 }
 
-/* The clearfix is generally applied to the container of floated elements */
-/* You had a typo with the closing brace for .section-title above */
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -55,7 +59,7 @@ body {
 
 @media (min-width: 992px) {
     .content-section {
-        /* Adjust the width calculation if you change the margin */
+        
         width: calc(33.333% - 40px);
         margin: 20px;
     }
