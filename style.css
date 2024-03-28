@@ -33,7 +33,7 @@ body {
     margin-left: 0;
 }
 
-#section2, #section3 { /* Ensure the right margin is also 0 for section2 */
+#section2, #section3 { 
     margin-right: 0;
 }
 
@@ -45,20 +45,20 @@ body {
     border: 1px solid black;
     color: white;
     text-align: center;
-    /* Removed the common background-color here, as it's set individually below */
+    
 }
 
-/* Individual background colors for each section title */
+
 #section1 .section-title {
-    background-color: #ff4c4c; /* Example color: red */
+    background-color: #ff4c4c; 
 }
 
 #section2 .section-title {
-    background-color: #006400; /* Example color: green */
+    background-color: #006400; 
 }
 
 #section3 .section-title {
-    background-color: #4c4cff; /* Example color: blue */
+    background-color: #4c4cff; 
 }
 
 .clearfix::after {
@@ -77,9 +77,9 @@ body {
         margin-left: 20px;
     }
 
-    /* Adjust the margins for section2 and section3 for consistent spacing */
+    
     #section2 {
-        margin-left: 20px; /* Added for consistent spacing */
+        margin-left: 20px; 
     }
 
     #section3 {
