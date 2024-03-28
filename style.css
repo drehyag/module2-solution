@@ -15,14 +15,14 @@ body {
 .container {
     width: 100%;
     clear: both;
-    overflow: auto; /* Added to contain floated children */
+    overflow: auto;
 }
 
 .content-section {
     float: left;
-    width: calc(33.333% - 40px); /* Subtracting 20px margin from each side */
+    width: calc(33.333% - 40px); 
     padding: 20px;
-    margin: 20px; /* Added margin */
+    margin: 20px; 
     box-sizing: border-box;
     border: 1px solid black;
     position: relative;
@@ -41,14 +41,15 @@ body {
 .section-title {
     position: absolute;
     top: 0;
-    right: 0;
-    padding: 5px;
+    right: 0; 
+    padding: 5px 10px;
     background-color: red;
     border: 1px solid black;
     color: white;
-    width: 100%;
     text-align: center;
+    
 }
+
 
 
 .clearfix::after {
